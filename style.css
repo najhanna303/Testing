@@ -1,0 +1,92 @@
+/* body{
+   
+}
+
+p{
+    font-size: 14px;
+}
+
+.main-container{
+    background-color:hsl(0, 0%, 12%);
+   
+}
+
+.content{
+
+} */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: hsl(0, 0%, 8%);
+    color:hsl(0, 0%, 100%);
+    font-family: "Inter", sans-serif;
+    font-weight: 400, 600, 700;
+}
+
+.center-div {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: hsl(0, 0%, 12%);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+#location{
+  color:  hsl(75, 94%, 57%)
+}
+.content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    margin-top: 20px; 
+    gap: 10px; 
+    
+}
+.profile{
+    background-color:  hsl(0, 0%, 20%);
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-align: center;
+    width: 300px;
+}
+
+.preview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile:hover{
+    background-color:  hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+
+@media (max-width: 375px) {
+    .center-div {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 15px;
+    }
+
+    .preview img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile {
+        width: 100%;
+        max-width: none; /* Removes max-width limitation */
+        padding: 10px;
+    }
+}
